@@ -1,4 +1,4 @@
- setInterval(() => 
+ 
 fetch('https://coffee.alexflipnote.dev/random.json')
 .then((res) => res.json())
 .then((date) => {
@@ -9,7 +9,7 @@ fetch('https://coffee.alexflipnote.dev/random.json')
         imgAPI.src = date.file
         continer.innerText = " " 
         continer.appendChild(imgAPI)
-    }),1000);
+    });
     
 
 
